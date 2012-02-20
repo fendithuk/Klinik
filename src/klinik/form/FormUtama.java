@@ -11,9 +11,14 @@
 
 package klinik.form;
 
+import java.awt.AWTException;
+import java.awt.CardLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import usu.widget.Form;
 
 /**
@@ -43,6 +48,19 @@ public class FormUtama extends Form {
         menuUtama1.addActionListenerLaporan(new AksiButton_MenuUtama_Laporan());
     }
 
+     void showPanel(Component panel, String card) {
+        try {
+            if (panel.isVisible()) {
+                return;
+            }
+            glasspane.startTransition(panelBacground1);
+            ((CardLayout) jPanel1.getLayout()).show(jPanel1, card);
+        } catch (AWTException ex) {
+            Logger.getLogger(FormUtama.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+    }
+
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -60,6 +78,7 @@ public class FormUtama extends Form {
         label2 = new klinik.form.template.Label();
         jPanel1 = new javax.swing.JPanel();
         menuUtama1 = new klinik.form.MenuUtama();
+        menuPasien1 = new klinik.form.MenuPasien();
         panelBacground2 = new klinik.form.template.PanelBacground();
         button1 = new klinik.form.template.Button();
         button2 = new klinik.form.template.Button();
@@ -102,6 +121,7 @@ public class FormUtama extends Form {
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.CardLayout());
         jPanel1.add(menuUtama1, "card2");
+        jPanel1.add(menuPasien1, "PASIEN");
 
         javax.swing.GroupLayout panelBacground1Layout = new javax.swing.GroupLayout(panelBacground1);
         panelBacground1.setLayout(panelBacground1Layout);
@@ -195,6 +215,7 @@ public class FormUtama extends Form {
     private javax.swing.JPanel jPanel1;
     private klinik.form.template.Label label1;
     private klinik.form.template.Label label2;
+    private klinik.form.MenuPasien menuPasien1;
     private klinik.form.MenuUtama menuUtama1;
     private klinik.form.template.PanelBacground panelBacground1;
     private klinik.form.template.PanelBacground panelBacground2;
@@ -206,6 +227,9 @@ public class FormUtama extends Form {
 
       public void actionPerformed(final ActionEvent e) {
           System.out.println("pasien");
+          showPanel(FormUtama.this.menuPasien1, "PASIEN");
+//         setTitleBody(null);
+//         setTitleBody("Laporan : Pengembalian");
       }
    }
     class AksiButton_MenuUtama_Periksa implements ActionListener {

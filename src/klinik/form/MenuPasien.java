@@ -61,6 +61,8 @@ public class MenuPasien extends javax.swing.JPanel {
         button3 = new klinik.form.template.Button();
         button4 = new klinik.form.template.Button();
 
+        setOpaque(false);
+
         table1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
