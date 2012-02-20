@@ -72,6 +72,8 @@ public class MenuUtama extends javax.swing.JPanel {
         buttonUser = new klinik.form.template.ButtonBig();
         buttonLaporan = new klinik.form.template.ButtonBig();
 
+        setOpaque(false);
+
         buttonPembayaran.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/MedicalBillingIcon copy.png"))); // NOI18N
         buttonPembayaran.setText("Pembayaran");
 

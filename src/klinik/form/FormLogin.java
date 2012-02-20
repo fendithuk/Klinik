@@ -24,8 +24,9 @@ public class FormLogin extends Form {
 
     /** Creates new form FormLogin */
     private static final long serialVersionUID = 1L;
-
+    private FormUtama fu;
     public FormLogin(){
+        fu = new FormUtama();
         initComponents();
         setMinimumSize(new Dimension(925, 700));
 //        this.setResizable(false);
@@ -34,7 +35,7 @@ public class FormLogin extends Form {
 
     public void initActions(){
         //MenuUtama
-        menuUtama.addActionListenerFilm(new AksiButton_MenuUtama_Film());
+//        menuUtama.addActionListenerFilm(new AksiButton_MenuUtama_Film());
     }
     /** This method is called from within the constructor to
      * initialize the form.
@@ -87,6 +88,11 @@ public class FormLogin extends Form {
 
         button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/login-icon.png"))); // NOI18N
         button2.setText("masuk");
+        button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button2ActionPerformed(evt);
+            }
+        });
 
         label3.setText("Klinik Login");
         label3.setFont(new java.awt.Font("Rockwell", 1, 36));
@@ -96,7 +102,7 @@ public class FormLogin extends Form {
         panelBacground1Layout.setHorizontalGroup(
             panelBacground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBacground1Layout.createSequentialGroup()
-                .addContainerGap(843, Short.MAX_VALUE)
+                .addContainerGap(749, Short.MAX_VALUE)
                 .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(panelBacground1Layout.createSequentialGroup()
@@ -104,7 +110,7 @@ public class FormLogin extends Form {
                 .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(86, 86, 86))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBacground1Layout.createSequentialGroup()
-                .addContainerGap(104, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(buttonBig1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addGroup(panelBacground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -159,6 +165,12 @@ public class FormLogin extends Form {
         glasspane.hideComponent();
     }//GEN-LAST:event_about1ActionPerformed
 
+    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+        // TODO add your handling code here:
+        fu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_button2ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -178,10 +190,5 @@ public class FormLogin extends Form {
     private klinik.form.template.TextBox textBox1;
     // End of variables declaration//GEN-END:variables
 
-    class AksiButton_AktivitasOperator_Pasien implements ActionListener {
-
-      public void actionPerformed(final ActionEvent e) {
-
-      }
-   }
+    
 }

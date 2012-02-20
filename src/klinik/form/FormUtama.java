@@ -11,6 +11,9 @@
 
 package klinik.form;
 
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import usu.widget.Form;
 
 /**
@@ -23,6 +26,21 @@ public class FormUtama extends Form {
     private static final long serialVersionUID = 1L;
     public FormUtama() {
         initComponents();
+        setMinimumSize(new Dimension(925, 700));
+//        this.setResizable(false);
+        setLocationRelativeTo(null);
+        initActions();
+    }
+
+    public void initActions(){
+        //MenuUtama
+        menuUtama1.addActionListenerPasien(new AksiButton_MenuUtama_Pasien());
+        menuUtama1.addActionListenerPeriksa(new AksiButton_MenuUtama_Periksa());
+        menuUtama1.addActionListenerPembayaran(new AksiButton_MenuUtama_Pembayaran());
+        menuUtama1.addActionListenerObat(new AksiButton_MenuUtama_Obat());
+        menuUtama1.addActionListenerDokter(new AksiButton_MenuUtama_Dokter());
+        menuUtama1.addActionListenerUser(new AksiButton_MenuUtama_User());
+        menuUtama1.addActionListenerLaporan(new AksiButton_MenuUtama_Laporan());
     }
 
     /** This method is called from within the constructor to
@@ -34,15 +52,28 @@ public class FormUtama extends Form {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        glasspane = new usu.widget.GlassPane();
+        about1 = new klinik.form.About();
         panelBacground1 = new klinik.form.template.PanelBacground();
         panelBacground3 = new klinik.form.template.PanelBacground();
         label1 = new klinik.form.template.Label();
         label2 = new klinik.form.template.Label();
         jPanel1 = new javax.swing.JPanel();
+        menuUtama1 = new klinik.form.MenuUtama();
         panelBacground2 = new klinik.form.template.PanelBacground();
         button1 = new klinik.form.template.Button();
         button2 = new klinik.form.template.Button();
         button3 = new klinik.form.template.Button();
+
+        setGlassPane(glasspane);
+        getGlassPane().setVisible(true);
+        glasspane.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 6, 6));
+
+        about1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                about1ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +101,7 @@ public class FormUtama extends Form {
 
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.CardLayout());
+        jPanel1.add(menuUtama1, "card2");
 
         javax.swing.GroupLayout panelBacground1Layout = new javax.swing.GroupLayout(panelBacground1);
         panelBacground1.setLayout(panelBacground1Layout);
@@ -91,7 +123,7 @@ public class FormUtama extends Form {
                 .addContainerGap()
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelBacground3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -100,6 +132,11 @@ public class FormUtama extends Form {
 
         button1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/About.png"))); // NOI18N
         button1.setText("tentang");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
 
         button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/exit.png"))); // NOI18N
         button2.setText("logout");
@@ -135,27 +172,77 @@ public class FormUtama extends Form {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void about1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_about1ActionPerformed
+        // TODO add your handling code here:
+        glasspane.hideComponent();
+}//GEN-LAST:event_about1ActionPerformed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+        glasspane.showComponent(about1);
+    }//GEN-LAST:event_button1ActionPerformed
+
     /**
     * @param args the command line arguments
     */
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FormUtama().setVisible(true);
-            }
-        });
-    }
-
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private klinik.form.About about1;
     private klinik.form.template.Button button1;
     private klinik.form.template.Button button2;
     private klinik.form.template.Button button3;
+    usu.widget.GlassPane glasspane;
     private javax.swing.JPanel jPanel1;
     private klinik.form.template.Label label1;
     private klinik.form.template.Label label2;
+    private klinik.form.MenuUtama menuUtama1;
     private klinik.form.template.PanelBacground panelBacground1;
     private klinik.form.template.PanelBacground panelBacground2;
     private klinik.form.template.PanelBacground panelBacground3;
     // End of variables declaration//GEN-END:variables
 
+    //start action button menu utama
+    class AksiButton_MenuUtama_Pasien implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("pasien");
+      }
+   }
+    class AksiButton_MenuUtama_Periksa implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("periksa");
+      }
+   }
+    class AksiButton_MenuUtama_Pembayaran implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("pembayaran");
+      }
+   }
+    class AksiButton_MenuUtama_Obat implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("obat");
+      }
+   }
+    class AksiButton_MenuUtama_Dokter implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("Dokter");
+      }
+   }
+    class AksiButton_MenuUtama_User implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("user");
+      }
+   }
+    class AksiButton_MenuUtama_Laporan implements ActionListener {
+
+      public void actionPerformed(final ActionEvent e) {
+          System.out.println("laporan");
+      }
+   }
+    //end action button menu utama
 }
