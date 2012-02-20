@@ -8,7 +8,6 @@
  *
  * Created on Feb 20, 2012, 10:26:03 PM
  */
-
 package klinik.form;
 
 import java.awt.AWTException;
@@ -29,6 +28,7 @@ public class FormUtama extends Form {
 
     /** Creates new form FormUtama */
     private static final long serialVersionUID = 1L;
+
     public FormUtama() {
         initComponents();
         setMinimumSize(new Dimension(925, 700));
@@ -37,7 +37,7 @@ public class FormUtama extends Form {
         initActions();
     }
 
-    public void initActions(){
+    public void initActions() {
         //MenuUtama
         menuUtama1.addActionListenerPasien(new AksiButton_MenuUtama_Pasien());
         menuUtama1.addActionListenerPeriksa(new AksiButton_MenuUtama_Periksa());
@@ -48,7 +48,7 @@ public class FormUtama extends Form {
         menuUtama1.addActionListenerLaporan(new AksiButton_MenuUtama_Laporan());
     }
 
-     void showPanel(Component panel, String card) {
+    void showPanel(Component panel, String card) {
         try {
             if (panel.isVisible()) {
                 return;
@@ -58,7 +58,15 @@ public class FormUtama extends Form {
         } catch (AWTException ex) {
             Logger.getLogger(FormUtama.class.getName()).log(Level.SEVERE, null, ex);
         }
-       
+
+    }
+
+    void setTitleBody(String title) {
+        if (title == null) {
+            label2.setText("Klinik Beranda");
+        } else {
+            label2.setText(label2.getText() + " : " + title);
+        }
     }
 
     /** This method is called from within the constructor to
@@ -120,7 +128,7 @@ public class FormUtama extends Form {
 
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.CardLayout());
-        jPanel1.add(menuUtama1, "card2");
+        jPanel1.add(menuUtama1, "BERANDA");
         jPanel1.add(menuPasien1, "PASIEN");
 
         javax.swing.GroupLayout panelBacground1Layout = new javax.swing.GroupLayout(panelBacground1);
@@ -129,13 +137,13 @@ public class FormUtama extends Form {
             panelBacground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelBacground3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(panelBacground1Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(673, 673, 673))
-            .addGroup(panelBacground1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 894, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(panelBacground1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(label2, javax.swing.GroupLayout.DEFAULT_SIZE, 803, Short.MAX_VALUE)
+                .addGap(101, 101, 101))
         );
         panelBacground1Layout.setVerticalGroup(
             panelBacground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,6 +171,11 @@ public class FormUtama extends Form {
 
         button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/home-ico.png"))); // NOI18N
         button3.setText("beranda");
+        button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelBacground2Layout = new javax.swing.GroupLayout(panelBacground2);
         panelBacground2.setLayout(panelBacground2Layout);
@@ -202,10 +215,15 @@ public class FormUtama extends Form {
         glasspane.showComponent(about1);
     }//GEN-LAST:event_button1ActionPerformed
 
+    private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
+        // TODO add your handling code here:
+       
+        showPanel(FormUtama.this.menuUtama1, "BERANDA");
+        setTitleBody(null);
+    }//GEN-LAST:event_button3ActionPerformed
     /**
-    * @param args the command line arguments
-    */
-   
+     * @param args the command line arguments
+     */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private klinik.form.About about1;
     private klinik.form.template.Button button1;
@@ -225,48 +243,54 @@ public class FormUtama extends Form {
     //start action button menu utama
     class AksiButton_MenuUtama_Pasien implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("pasien");
-          showPanel(FormUtama.this.menuPasien1, "PASIEN");
-//         setTitleBody(null);
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("pasien");
+            showPanel(FormUtama.this.menuPasien1, "PASIEN");
+            setTitleBody("Pasien");
 //         setTitleBody("Laporan : Pengembalian");
-      }
-   }
+        }
+    }
+
     class AksiButton_MenuUtama_Periksa implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("periksa");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("periksa");
+        }
+    }
+
     class AksiButton_MenuUtama_Pembayaran implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("pembayaran");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("pembayaran");
+        }
+    }
+
     class AksiButton_MenuUtama_Obat implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("obat");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("obat");
+        }
+    }
+
     class AksiButton_MenuUtama_Dokter implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("Dokter");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("Dokter");
+        }
+    }
+
     class AksiButton_MenuUtama_User implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("user");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("user");
+        }
+    }
+
     class AksiButton_MenuUtama_Laporan implements ActionListener {
 
-      public void actionPerformed(final ActionEvent e) {
-          System.out.println("laporan");
-      }
-   }
+        public void actionPerformed(final ActionEvent e) {
+            System.out.println("laporan");
+        }
+    }
     //end action button menu utama
 }

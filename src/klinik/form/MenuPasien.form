@@ -19,10 +19,10 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="1" pref="698" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="label1" min="-2" pref="71" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -30,159 +30,31 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="button1" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="scrollpane" alignment="0" pref="698" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="button3" min="-2" pref="124" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="button4" min="-2" pref="97" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                      <Component id="button2" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="label2" pref="109" max="32767" attributes="2"/>
-                          <Component id="label3" pref="109" max="32767" attributes="2"/>
-                          <Component id="label4" pref="109" max="32767" attributes="2"/>
-                          <Component id="label5" pref="109" max="32767" attributes="2"/>
-                          <Component id="label8" pref="109" max="32767" attributes="2"/>
-                          <Component id="label6" pref="109" max="32767" attributes="2"/>
-                          <Component id="label9" pref="109" max="32767" attributes="2"/>
-                      </Group>
-                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="textBox8" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox3" alignment="0" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox4" alignment="0" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox5" alignment="0" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox6" alignment="0" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox7" alignment="0" pref="470" max="32767" attributes="2"/>
-                          <Component id="textBox2" alignment="1" pref="470" max="32767" attributes="2"/>
-                      </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="checkbox1" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox2" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox3" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox4" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox5" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox6" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox7" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="label1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textBox1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="button1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <Component id="scrollpane" pref="156" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="145" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox1" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label3" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox2" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox3" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox4" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox5" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="checkbox6" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="checkbox7" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="textBox8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="label8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="button2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="button3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="button4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="klinik.form.template.Table" name="table1">
-          <Properties>
-            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="7" rowCount="4">
-                <Column editable="true" title="No" type="java.lang.Object"/>
-                <Column editable="true" title="No. Pasien" type="java.lang.Object"/>
-                <Column editable="true" title="Nama" type="java.lang.Object"/>
-                <Column editable="true" title="Tgl Lahir" type="java.lang.Object"/>
-                <Column editable="true" title="JK" type="java.lang.Object"/>
-                <Column editable="true" title="Alamat" type="java.lang.Object"/>
-                <Column editable="true" title="Telp" type="java.lang.Object"/>
-              </Table>
-            </Property>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="klinik.form.template.Label" name="label1">
       <Properties>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
@@ -199,147 +71,257 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="klinik.form.template.Label" name="label2">
+    <Container class="usu.rental.film.widget.ScrollPane" name="scrollpane">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="usu.rental.film.widget.Table" name="table">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="0" rowCount="0"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="No. Pasien :"/>
-        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label3">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Nama : "/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label4">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Tanggal Lahir :"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label5">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Jenis Kelamin :"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label6">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Jenis Kelamin :"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label8">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Telphone :"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox2">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox2"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox3">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox3"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox4">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox4"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox5">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox5"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox6">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox6"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox7">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox7"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.TextBox" name="textBox8">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox8"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Label" name="label9">
-      <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Jenis Kelamin :"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Button" name="button2">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/klinik/form/ico/remove_256.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="hapus"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox1">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox2">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox3">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox4">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox5">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox6">
-    </Component>
-    <Component class="java.awt.Checkbox" name="checkbox7">
-    </Component>
-    <Component class="klinik.form.template.Button" name="button3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/klinik/form/ico/add-icon.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="tambah"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="klinik.form.template.Button" name="button4">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/klinik/form/ico/301px-Orange_Icon_Edit.svg.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="edit"/>
-        </Property>
-      </Properties>
-    </Component>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="label2" min="-2" pref="118" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="textBox2" pref="550" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="label3" min="-2" pref="118" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="textBox3" pref="550" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="label6" min="-2" pref="118" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="textBox5" pref="550" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="label7" min="-2" pref="118" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="textBox6" pref="550" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="label4" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                              <Component id="label5" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="textStatus" min="-2" pref="92" max="-2" attributes="2"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="textStatus1" min="-2" pref="92" max="-2" attributes="2"/>
+                              </Group>
+                              <Component id="textBox4" alignment="0" pref="550" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="button3" min="-2" pref="147" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="button4" min="-2" pref="135" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="button2" min="-2" pref="139" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="label2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="label5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textStatus1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="button2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="button4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="button3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="klinik.form.template.Button" name="button3">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/klinik/form/ico/add-icon.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="tambah"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Button" name="button4">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/klinik/form/ico/301px-Orange_Icon_Edit.svg.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="edit"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Button" name="button2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/klinik/form/ico/remove_256.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="hapus"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Label" name="label2">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="No. Pasien :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.TextBox" name="textBox2">
+        </Component>
+        <Component class="klinik.form.template.TextBox" name="textBox3">
+        </Component>
+        <Component class="klinik.form.template.Label" name="label3">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Nama Pasien :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Label" name="label4">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Tanggal Lahir :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Label" name="label5">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Jenis Kelamin :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Label" name="label6">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value=" Alamat :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.Label" name="label7">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Telephone :"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="klinik.form.template.TextBox" name="textBox4">
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="textStatus">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="65"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Laki-laki"/>
+            </Property>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="textStatusItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="textStatus1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="65"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <PlainString value="Perempuan"/>
+            </Property>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="textStatus1ItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+          </AuxValues>
+        </Component>
+        <Component class="klinik.form.template.TextBox" name="textBox5">
+        </Component>
+        <Component class="klinik.form.template.TextBox" name="textBox6">
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
