@@ -87,6 +87,7 @@ public class FormUtama extends Form {
         jPanel1 = new javax.swing.JPanel();
         menuUtama1 = new klinik.form.MenuUtama();
         menuPasien1 = new klinik.form.MenuPasien();
+        menuPeriksa1 = new klinik.form.MenuPeriksa();
         panelBacground2 = new klinik.form.template.PanelBacground();
         button1 = new klinik.form.template.Button();
         button2 = new klinik.form.template.Button();
@@ -124,12 +125,13 @@ public class FormUtama extends Form {
         );
 
         label2.setText("Klinik Beranda");
-        label2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        label2.setFont(new java.awt.Font("Tahoma", 1, 24));
 
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.CardLayout());
         jPanel1.add(menuUtama1, "BERANDA");
         jPanel1.add(menuPasien1, "PASIEN");
+        jPanel1.add(menuPeriksa1, "PERIKSA");
 
         javax.swing.GroupLayout panelBacground1Layout = new javax.swing.GroupLayout(panelBacground1);
         panelBacground1.setLayout(panelBacground1Layout);
@@ -234,6 +236,7 @@ public class FormUtama extends Form {
     private klinik.form.template.Label label1;
     private klinik.form.template.Label label2;
     private klinik.form.MenuPasien menuPasien1;
+    private klinik.form.MenuPeriksa menuPeriksa1;
     private klinik.form.MenuUtama menuUtama1;
     private klinik.form.template.PanelBacground panelBacground1;
     private klinik.form.template.PanelBacground panelBacground2;
@@ -255,6 +258,8 @@ public class FormUtama extends Form {
 
         public void actionPerformed(final ActionEvent e) {
             System.out.println("periksa");
+             showPanel(FormUtama.this.menuPasien1, "PERIKSA");
+            setTitleBody("Periksa");
         }
     }
 
