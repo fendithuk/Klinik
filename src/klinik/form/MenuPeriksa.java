@@ -44,105 +44,93 @@ public class MenuPeriksa extends javax.swing.JPanel {
         label4 = new klinik.form.template.Label();
         label5 = new klinik.form.template.Label();
         formatterBox1 = new klinik.form.template.FormatterBox();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        textArea1 = new klinik.form.template.TextArea();
         label6 = new klinik.form.template.Label();
         textBox4 = new klinik.form.template.TextBox();
         label7 = new klinik.form.template.Label();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        textArea2 = new klinik.form.template.TextArea();
         label8 = new klinik.form.template.Label();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        textArea3 = new klinik.form.template.TextArea();
         label9 = new klinik.form.template.Label();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        textArea4 = new klinik.form.template.TextArea();
         button3 = new klinik.form.template.Button();
         button4 = new klinik.form.template.Button();
         button2 = new klinik.form.template.Button();
-        textAlamat = new usu.rental.film.widget.TextArea();
-        textAlamat1 = new usu.rental.film.widget.TextArea();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        textArea5 = new klinik.form.TextArea();
+        scrollPane3 = new usu.rental.film.widget.ScrollPane();
+        textArea1 = new usu.rental.film.widget.TextArea();
+        scrollPane5 = new usu.rental.film.widget.ScrollPane();
+        textArea2 = new usu.rental.film.widget.TextArea();
+        scrollPane6 = new usu.rental.film.widget.ScrollPane();
+        textArea4 = new usu.rental.film.widget.TextArea();
+        scrollPane7 = new usu.rental.film.widget.ScrollPane();
+        textArea3 = new usu.rental.film.widget.TextArea();
 
         setOpaque(false);
 
-        label1.setText("Pencarian");
+        label1.setText("Pencarian"); // NOI18N
 
-        textBox1.setText("textBox1");
+        textBox1.setText("textBox1"); // NOI18N
 
-        button1.setText("cari");
+        button1.setText("cari"); // NOI18N
 
         jPanel1.setOpaque(false);
 
         label2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label2.setText("No. Pasien :");
+        label2.setText("No. Pasien :"); // NOI18N
 
-        textBox2.setText("textBox2");
+        textBox2.setText("textBox2"); // NOI18N
 
         label3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label3.setText("Nama Pasien :");
+        label3.setText("Nama Pasien :"); // NOI18N
 
-        textBox3.setText("textBox3");
+        textBox3.setText("textBox3"); // NOI18N
 
         label4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label4.setText("Tanggal Berobat :");
+        label4.setText("Tanggal Berobat :"); // NOI18N
 
         label5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label5.setText("Keluhan :");
+        label5.setText("Keluhan :"); // NOI18N
 
-        formatterBox1.setText("formatterBox1");
+        formatterBox1.setText("formatterBox1"); // NOI18N
+
+        label6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        label6.setText("Dokter :"); // NOI18N
+
+        textBox4.setText("textBox4"); // NOI18N
+
+        label7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        label7.setText("Diagnosa :"); // NOI18N
+
+        label8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        label8.setText("Pengobatan :"); // NOI18N
+
+        label9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        label9.setText("Alergi Obat :"); // NOI18N
+
+        button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/add-icon.png"))); // NOI18N
+        button3.setText("tambah"); // NOI18N
+
+        button4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/301px-Orange_Icon_Edit.svg.png"))); // NOI18N
+        button4.setText("edit"); // NOI18N
+
+        button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/remove_256.png"))); // NOI18N
+        button2.setText("hapus"); // NOI18N
 
         textArea1.setColumns(20);
         textArea1.setRows(5);
-        jScrollPane3.setViewportView(textArea1);
-
-        label6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label6.setText("Dokter :");
-
-        textBox4.setText("textBox4");
-
-        label7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label7.setText("Diagnosa :");
+        textArea1.setSelectionColor(new java.awt.Color(255, 0, 51));
+        scrollPane3.setViewportView(textArea1);
 
         textArea2.setColumns(20);
         textArea2.setRows(5);
-        jScrollPane4.setViewportView(textArea2);
-
-        label8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label8.setText("Pengobatan :");
-
-        textArea3.setColumns(20);
-        textArea3.setRows(5);
-        jScrollPane5.setViewportView(textArea3);
-
-        label9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        label9.setText("Alergi Obat :");
+        textArea2.setSelectionColor(new java.awt.Color(255, 0, 51));
+        scrollPane5.setViewportView(textArea2);
 
         textArea4.setColumns(20);
         textArea4.setRows(5);
-        jScrollPane6.setViewportView(textArea4);
+        textArea4.setSelectionColor(new java.awt.Color(255, 0, 51));
+        scrollPane6.setViewportView(textArea4);
 
-        button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/add-icon.png"))); // NOI18N
-        button3.setText("tambah");
-
-        button4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/301px-Orange_Icon_Edit.svg.png"))); // NOI18N
-        button4.setText("edit");
-
-        button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/klinik/form/ico/remove_256.png"))); // NOI18N
-        button2.setText("hapus");
-
-        textAlamat.setColumns(20);
-        textAlamat.setEditable(false);
-        textAlamat.setRows(5);
-
-        textAlamat1.setColumns(20);
-        textAlamat1.setEditable(false);
-        textAlamat1.setRows(5);
-
-        textArea5.setColumns(20);
-        textArea5.setRows(5);
-        jScrollPane1.setViewportView(textArea5);
+        textArea3.setColumns(20);
+        textArea3.setRows(5);
+        textArea3.setSelectionColor(new java.awt.Color(255, 0, 51));
+        scrollPane7.setViewportView(textArea3);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -157,14 +145,6 @@ public class MenuPeriksa extends javax.swing.JPanel {
                         .addComponent(button4, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addComponent(label6, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
@@ -184,20 +164,18 @@ public class MenuPeriksa extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(scrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textAlamat, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))))
+                            .addComponent(scrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                            .addComponent(scrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                            .addComponent(scrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE))))
                 .addGap(42, 42, 42))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 103, Short.MAX_VALUE)
-                    .addComponent(textAlamat1, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 103, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,7 +195,7 @@ public class MenuPeriksa extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(scrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -225,30 +203,21 @@ public class MenuPeriksa extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(scrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(5, 5, 5)
+                    .addComponent(scrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(scrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(button4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textAlamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 292, Short.MAX_VALUE)
-                    .addComponent(textAlamat1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 293, Short.MAX_VALUE)))
+                .addContainerGap(190, Short.MAX_VALUE))
         );
 
         scrollPane2.setViewportView(jPanel1);
@@ -260,14 +229,14 @@ public class MenuPeriksa extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 653, Short.MAX_VALUE)
+                    .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 679, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(textBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(scrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 653, Short.MAX_VALUE))
+                    .addComponent(scrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 679, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -279,9 +248,9 @@ public class MenuPeriksa extends javax.swing.JPanel {
                     .addComponent(textBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 729, Short.MAX_VALUE)
+                .addComponent(scrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -294,11 +263,6 @@ public class MenuPeriksa extends javax.swing.JPanel {
     private klinik.form.template.Button button4;
     private klinik.form.template.FormatterBox formatterBox1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private klinik.form.template.Label label1;
     private klinik.form.template.Label label2;
     private klinik.form.template.Label label3;
@@ -310,13 +274,14 @@ public class MenuPeriksa extends javax.swing.JPanel {
     private klinik.form.template.Label label9;
     private usu.rental.film.widget.ScrollPane scrollPane1;
     private usu.rental.film.widget.ScrollPane scrollPane2;
-    usu.rental.film.widget.TextArea textAlamat;
-    usu.rental.film.widget.TextArea textAlamat1;
-    private klinik.form.template.TextArea textArea1;
-    private klinik.form.template.TextArea textArea2;
-    private klinik.form.template.TextArea textArea3;
-    private klinik.form.template.TextArea textArea4;
-    private klinik.form.TextArea textArea5;
+    private usu.rental.film.widget.ScrollPane scrollPane3;
+    private usu.rental.film.widget.ScrollPane scrollPane5;
+    private usu.rental.film.widget.ScrollPane scrollPane6;
+    private usu.rental.film.widget.ScrollPane scrollPane7;
+    private usu.rental.film.widget.TextArea textArea1;
+    private usu.rental.film.widget.TextArea textArea2;
+    private usu.rental.film.widget.TextArea textArea3;
+    private usu.rental.film.widget.TextArea textArea4;
     private klinik.form.template.TextBox textBox1;
     private klinik.form.template.TextBox textBox2;
     private klinik.form.template.TextBox textBox3;

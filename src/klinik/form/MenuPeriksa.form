@@ -22,7 +22,7 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="scrollPane1" alignment="0" pref="653" max="32767" attributes="0"/>
+                  <Component id="scrollPane1" alignment="0" pref="679" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="label1" min="-2" pref="71" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -30,7 +30,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="button1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="scrollPane2" alignment="0" pref="653" max="32767" attributes="0"/>
+                  <Component id="scrollPane2" alignment="0" pref="679" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -46,9 +46,9 @@
                   <Component id="button1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-              <Component id="scrollPane1" pref="576" max="32767" attributes="0"/>
+              <Component id="scrollPane1" pref="115" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="scrollPane2" pref="729" max="32767" attributes="0"/>
+              <Component id="scrollPane2" pref="262" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -57,23 +57,17 @@
   <SubComponents>
     <Component class="klinik.form.template.Label" name="label1">
       <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="Pencarian"/>
-        </Property>
+        <Property name="text" type="java.lang.String" value="Pencarian" noResource="true"/>
       </Properties>
     </Component>
     <Component class="klinik.form.template.TextBox" name="textBox1">
       <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="textBox1"/>
-        </Property>
+        <Property name="text" type="java.lang.String" value="textBox1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="klinik.form.template.Button" name="button1">
       <Properties>
-        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-          <PlainString value="cari"/>
-        </Property>
+        <Property name="text" type="java.lang.String" value="cari" noResource="true"/>
       </Properties>
     </Component>
     <Container class="usu.rental.film.widget.ScrollPane" name="scrollPane1">
@@ -103,16 +97,6 @@
                               <Component id="button2" min="-2" pref="139" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="label8" min="-2" pref="123" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jScrollPane5" pref="490" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="label7" min="-2" pref="123" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jScrollPane4" pref="490" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <Component id="label6" min="-2" pref="123" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Component id="textBox4" pref="490" max="32767" attributes="0"/>
@@ -135,26 +119,23 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="label5" min="-2" pref="123" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jScrollPane3" pref="490" max="32767" attributes="0"/>
+                              <Component id="scrollPane3" pref="490" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="label9" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="label7" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="label9" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="label8" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="textAlamat" alignment="0" pref="490" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane6" alignment="0" pref="490" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane1" alignment="0" pref="490" max="32767" attributes="0"/>
+                                  <Component id="scrollPane7" pref="490" max="32767" attributes="0"/>
+                                  <Component id="scrollPane6" pref="490" max="32767" attributes="0"/>
+                                  <Component id="scrollPane5" pref="490" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="103" max="32767" attributes="0"/>
-                          <Component id="textAlamat1" min="-2" pref="469" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="103" max="32767" attributes="0"/>
-                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -179,7 +160,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="label5" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
+                          <Component id="scrollPane3" min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -189,36 +170,25 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="label7" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
+                          <Component id="scrollPane5" min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="label8" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
+                          <Component id="scrollPane7" min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="label9" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jScrollPane6" min="-2" max="-2" attributes="0"/>
+                          <Component id="scrollPane6" min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="button2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="button4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="button3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="textAlamat" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="292" max="32767" attributes="0"/>
-                          <Component id="textAlamat1" min="-2" pref="125" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="293" max="32767" attributes="0"/>
-                      </Group>
+                      <EmptySpace pref="190" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -227,163 +197,77 @@
             <Component class="klinik.form.template.Label" name="label2">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="No. Pasien :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="No. Pasien :" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.TextBox" name="textBox2">
               <Properties>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="textBox2"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="textBox2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Label" name="label3">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Nama Pasien :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Nama Pasien :" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.TextBox" name="textBox3">
               <Properties>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="textBox3"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="textBox3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Label" name="label4">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Tanggal Berobat :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Tanggal Berobat :" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Label" name="label5">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Keluhan :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Keluhan :" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.FormatterBox" name="formatterBox1">
               <Properties>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="formatterBox1"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="formatterBox1" noResource="true"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="klinik.form.template.TextArea" name="textArea1">
-                  <Properties>
-                    <Property name="columns" type="int" value="20"/>
-                    <Property name="rows" type="int" value="5"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
             <Component class="klinik.form.template.Label" name="label6">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Dokter :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Dokter :" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.TextBox" name="textBox4">
               <Properties>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="textBox4"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="textBox4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Label" name="label7">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Diagnosa :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Diagnosa :" noResource="true"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="klinik.form.template.TextArea" name="textArea2">
-                  <Properties>
-                    <Property name="columns" type="int" value="20"/>
-                    <Property name="rows" type="int" value="5"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
             <Component class="klinik.form.template.Label" name="label8">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Pengobatan :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Pengobatan :" noResource="true"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="klinik.form.template.TextArea" name="textArea3">
-                  <Properties>
-                    <Property name="columns" type="int" value="20"/>
-                    <Property name="rows" type="int" value="5"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
             <Component class="klinik.form.template.Label" name="label9">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="Alergi Obat :"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Alergi Obat :" noResource="true"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="klinik.form.template.TextArea" name="textArea4">
-                  <Properties>
-                    <Property name="columns" type="int" value="20"/>
-                    <Property name="rows" type="int" value="5"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
             <Component class="klinik.form.template.Button" name="button3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/klinik/form/ico/add-icon.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="tambah"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="tambah" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Button" name="button4">
@@ -391,9 +275,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/klinik/form/ico/301px-Orange_Icon_Edit.svg.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="edit"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="edit" noResource="true"/>
               </Properties>
             </Component>
             <Component class="klinik.form.template.Button" name="button2">
@@ -401,42 +283,65 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/klinik/form/ico/remove_256.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-                  <PlainString value="hapus"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="hapus" noResource="true"/>
               </Properties>
             </Component>
-            <Component class="usu.rental.film.widget.TextArea" name="textAlamat">
-              <Properties>
-                <Property name="columns" type="int" value="20"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="rows" type="int" value="5"/>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
-              </AuxValues>
-            </Component>
-            <Component class="usu.rental.film.widget.TextArea" name="textAlamat1">
-              <Properties>
-                <Property name="columns" type="int" value="20"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="rows" type="int" value="5"/>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
-              </AuxValues>
-            </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
+            <Container class="usu.rental.film.widget.ScrollPane" name="scrollPane3">
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="klinik.form.TextArea" name="textArea5">
+                <Component class="usu.rental.film.widget.TextArea" name="textArea1">
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
+                    <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="0" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="usu.rental.film.widget.ScrollPane" name="scrollPane5">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="usu.rental.film.widget.TextArea" name="textArea2">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="0" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="usu.rental.film.widget.ScrollPane" name="scrollPane6">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="usu.rental.film.widget.TextArea" name="textArea4">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="0" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="usu.rental.film.widget.ScrollPane" name="scrollPane7">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="usu.rental.film.widget.TextArea" name="textArea3">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="0" red="ff" type="rgb"/>
+                    </Property>
                   </Properties>
                 </Component>
               </SubComponents>
